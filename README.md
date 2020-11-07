@@ -45,21 +45,23 @@ Then run `webpack-loader-s3` via your preferred method.
 
 **Required options:**
 
-- *endpoint* - domain of your S3 endpoint ([more](#more))
-- *bucket* - your S3 bucket name ([more](#more))
-- *access_key* - your S3 access key ([more](#more))
-- *secret_key* - your S3 secret key ([more](#more))
+- *endpoint* - domain of your S3 endpoint ([more info](#endpoint))
+- *bucket* - your S3 bucket name ([more info](#bucket))
+- *access_key* - your S3 access key ([more info](#access_key))
+- *secret_key* - your S3 secret key ([more info](#secret_key))
 
 **Optional:**
 
-- *cdn* - endpint of your cdn ([more](#more))
-- *region* - region of your S3 bucket ([more](#more))
-- *permission* - ACL file permission (default: public-read) ([more](#more))
-- *name* - filename template for the target file(s) ([more](#more))
-- *outputPath* - a filesystem path where the target file(s) will be placed ([more](#more))
-- *context* - a custom file context ([more](#more))
-- *regExp* - a Regular Expression to one or many parts of the target file path ([more](#more))
-- *esModule* - generate JS modules that use the ES modules syntax (default: true) ([more](#more))
+- *cdn* - endpint of your cdn ([more info](#cdn))
+- *region* - region of your S3 bucket ([more info](#region))
+- *permission* - ACL file permission (default: public-read) ([more info](#permission))
+- *name* - filename template for the target file(s) ([more info](#name))
+- *outputPath* - a filesystem path where the target file(s) will be placed ([more info](#outputpath))
+- *context* - a custom file context ([more info](#context))
+- *regExp* - a Regular Expression to one or many parts of the target file path ([more info](#regexp))
+- *esModule* - generate JS modules that use the ES modules syntax (default: true) ([more info](#esmodule))
+
+**Detailed:**
 
 ### `endpoint`
 
