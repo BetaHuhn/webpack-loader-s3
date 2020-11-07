@@ -1,0 +1,86 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "name": {
+      "description": "The filename template for the target file(s)",
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "instanceof": "Function"
+        }
+      ]
+    },
+    "endpoint": {
+      "description": "S3 Endpoint",
+      "type": "string",
+      "minLength": 1
+    },
+    "bucket": {
+      "description": "S3 Bucket",
+      "type": "string",
+      "minLength": 1
+    },
+    "cdn": {
+      "description": "CDN Domain",
+      "type": "string"
+    },
+    "access_key": {
+      "description": "S3 Access Key",
+      "type": "string",
+      "minLength": 1
+    },
+    "secret_key": {
+      "description": "S3 Secret Access Key",
+      "type": "string",
+      "minLength": 1
+    },
+    "permission": {
+      "description": "S3 file permission (default: public)",
+      "type": "string"
+    },
+    "outputPath": {
+      "description": "A filesystem path where the target file(s) will be placed",
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "instanceof": "Function"
+        }
+      ]
+    },
+    "publicPath": {
+      "description": "A custom public path for the target file(s)",
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "instanceof": "Function"
+        }
+      ]
+    },
+    "context": {
+      "description": "A custom file context",
+      "type": "string"
+    },
+    "regExp": {
+      "description": "A Regular Expression to one or many parts of the target file path. The capture groups can be reused in the name property using [N] placeholder",
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "instanceof": "RegExp"
+        }
+      ]
+    },
+    "esModule": {
+      "description": "By default, file-loader generates JS modules that use the ES modules syntax.",
+      "type": "boolean"
+    }
+  },
+  "type": "object"
+}

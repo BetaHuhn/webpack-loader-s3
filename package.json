@@ -1,0 +1,56 @@
+{
+  "name": "webpack-loader-s3",
+  "version": "0.1.0",
+  "description": "",
+  "license": "MIT",
+  "author": "Maximilian Schiller <hello@mxis.ch>",
+  "main": "dist/cjs.js",
+  "engines": {
+    "node": ">= 10.13.0"
+  },
+  "scripts": {
+    "start": "npm run build -- -w",
+    "clean": "del-cli dist",
+    "prebuild": "npm run clean",
+    "build": "cross-env NODE_ENV=production babel src -d dist --copy-files",
+    "prepare": "npm run build",
+    "lint": "eslint --ignore-path .gitignore ."
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BetaHuhn/webpack-loader-s3.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BetaHuhn/webpack-loader-s3/issues"
+  },
+  "homepage": "https://github.com/BetaHuhn/webpack-loader-s3#readme",
+  "keywords": [
+    "webpack",
+    "webpack-loader",
+    "vue",
+    "s3",
+    "image-loader",
+    "production",
+    "cdn"
+  ],
+  "peerDependencies": {
+    "webpack": "^4.0.0 || ^5.0.0"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.767.0",
+    "loader-utils": "^2.0.0",
+    "schema-utils": "^3.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "@betahuhn/eslint-config-node": "^0.1.0",
+    "cross-env": "^7.0.2",
+    "del-cli": "^3.0.1",
+    "eslint": "^7.9.0"
+  }
+}
