@@ -1,0 +1,4 @@
+contact_links:
+  - name: 📚 Docs
+    url: https://github.com/BetaHuhn/webpack-loader-s3#%EF%B8%8F-configuration
+    about: Checkout webpack-loader-s3's documentation before you open an issue.
