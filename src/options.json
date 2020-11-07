@@ -41,18 +41,7 @@
       "type": "string"
     },
     "outputPath": {
-      "description": "A filesystem path where the target file(s) will be placed",
-      "anyOf": [
-        {
-          "type": "string"
-        },
-        {
-          "instanceof": "Function"
-        }
-      ]
-    },
-    "publicPath": {
-      "description": "A custom public path for the target file(s)",
+      "description": "A path where the target file(s) will be placed",
       "anyOf": [
         {
           "type": "string"

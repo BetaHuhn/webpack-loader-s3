@@ -38,20 +38,7 @@ export default function loader(content) {
 		}
 	}
 
-	let publicPath = isProduction ? outputPath : `__webpack_public_path__ + ${ JSON.stringify(outputPath) }`
-	if (options.publicPath) {
-		if (typeof options.publicPath === 'function') {
-			publicPath = options.publicPath(url, this.resourcePath, context)
-		} else {
-			publicPath = `${
-				options.publicPath.endsWith('/') ? options.publicPath : `${ options.publicPath }/`
-			}${ url }`
-		}
-
-		if (!isProduction) {
-			publicPath = JSON.stringify(publicPath)
-		}
-	}
+	const publicPath = isProduction ? outputPath : `__webpack_public_path__ + ${ JSON.stringify(outputPath) }`
 
 	const esModule = typeof options.esModule !== 'undefined' ? options.esModule : true
 

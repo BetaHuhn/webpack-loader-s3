@@ -1,7 +1,7 @@
 {
   "name": "webpack-loader-s3",
   "version": "0.1.0",
-  "description": "",
+  "description": "Webpack loader which uploads your assets to a S3 Bucket and changes all mentions of the files in your source code.",
   "license": "MIT",
   "author": "Maximilian Schiller <hello@mxis.ch>",
   "main": "dist/cjs.js",
