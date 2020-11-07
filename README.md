@@ -4,7 +4,7 @@
 
 [![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/BetaHuhn/webpack-loader-s3/blob/master/LICENSE) ![David](https://img.shields.io/david/betahuhn/webpack-loader-s3) [![npm](https://img.shields.io/npm/v/webpack-loader-s3)](https://www.npmjs.com/package/webpack-loader-s3)
 
-[webpack-loader-s3](https://github.com/BetaHuhn/webpack-loader-s3) replaces local file references in HTML and other files with a version which is automaticly uploaded to an S3 bucket.
+Webpack loader which uploads local file references in HTML and other files to an S3 bucket and replaces them with a CDN endpoint in the production build.
 
 </div>
 
@@ -463,7 +463,7 @@ module.exports = {
 
 ## 🏷️ Placeholders
 
-Full information about placeholders you can find [here](https://github.com/webpack/loader-utils#interpolatename).
+Find more information about placeholders [here](https://github.com/webpack/loader-utils#interpolatename).
 
 ### `[ext]`
 
