@@ -1,6 +1,6 @@
 {
   "name": "webpack-loader-s3",
-  "version": "0.1.0-beta",
+  "version": "1.0.0",
   "description": "Webpack loader which uploads local file references in HTML and other files to an S3 bucket and replaces them with a CDN endpoint in the production build.",
   "license": "MIT",
   "author": "Maximilian Schiller <hello@mxis.ch>",
