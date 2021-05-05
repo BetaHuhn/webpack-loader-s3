@@ -6,6 +6,8 @@
 
 Webpack loader which uploads local file references in HTML and other files to an S3 bucket and replaces them with a CDN endpoint in the production build.
 
+**⚠️ Deprecated ⚠️**: This project is not maintained anymore and should not be used in production!
+
 </div>
 
 ## 👋 Introduction
